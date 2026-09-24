@@ -1,0 +1,58 @@
+[
+  {
+    "id": "la-trattoria",
+    "name": "La Trattoria",
+    "cuisine": "Italian",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "spice-route",
+    "name": "Spice Route",
+    "cuisine": "Indian",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "sakura-house",
+    "name": "Sakura House",
+    "cuisine": "Japanese",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "casa-fiesta",
+    "name": "Casa Fiesta",
+    "cuisine": "Mexican",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "thai-basil",
+    "name": "Thai Basil",
+    "cuisine": "Thai",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1627308595186-e6bb36712645?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "burger-foundry",
+    "name": "Burger Foundry",
+    "cuisine": "American",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "dragon-wok",
+    "name": "Dragon Wok",
+    "cuisine": "Chinese",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "olive-grove",
+    "name": "Olive Grove",
+    "cuisine": "Mediterranean",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop"
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "id": "butter-chicken",
+    "restaurantId": "spice-route",
+    "name": "Butter Chicken",
+    "price": 320,
+    "cuisine": "Indian",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "paneer-tikka",
+    "restaurantId": "spice-route",
+    "name": "Paneer Tikka",
+    "price": 260,
+    "cuisine": "Indian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "dal-makhani",
+    "restaurantId": "spice-route",
+    "name": "Dal Makhani",
+    "price": 220,
+    "cuisine": "Indian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "naan",
+    "restaurantId": "spice-route",
+    "name": "Naan",
+    "price": 60,
+    "cuisine": "Indian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "gulab-jamun",
+    "restaurantId": "spice-route",
+    "name": "Gulab Jamun",
+    "price": 120,
+    "cuisine": "Indian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "chicken-biryani",
+    "restaurantId": "spice-route",
+    "name": "Chicken Biryani",
+    "price": 360,
+    "cuisine": "Indian",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "margherita-pizza",
+    "restaurantId": "la-trattoria",
+    "name": "Margherita Pizza",
+    "price": 290,
+    "cuisine": "Italian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "truffle-pasta",
+    "restaurantId": "la-trattoria",
+    "name": "Truffle Pasta",
+    "price": 450,
+    "cuisine": "Italian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "chicken-alfredo",
+    "restaurantId": "la-trattoria",
+    "name": "Chicken Alfredo",
+    "price": 420,
+    "cuisine": "Italian",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "burrata-salad",
+    "restaurantId": "la-trattoria",
+    "name": "Burrata Salad",
+    "price": 340,
+    "cuisine": "Italian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "beef-lasagna",
+    "restaurantId": "la-trattoria",
+    "name": "Beef Lasagna",
+    "price": 460,
+    "cuisine": "Italian",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "tiramisu",
+    "restaurantId": "la-trattoria",
+    "name": "Tiramisu",
+    "price": 180,
+    "cuisine": "Italian",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "salmon-sushi",
+    "restaurantId": "sakura-house",
+    "name": "Salmon Sushi",
+    "price": 520,
+    "cuisine": "Japanese",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "vegetable-ramen",
+    "restaurantId": "sakura-house",
+    "name": "Vegetable Ramen",
+    "price": 310,
+    "cuisine": "Japanese",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "chicken-teriyaki",
+    "restaurantId": "sakura-house",
+    "name": "Chicken Teriyaki",
+    "price": 380,
+    "cuisine": "Japanese",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "edamame",
+    "restaurantId": "sakura-house",
+    "name": "Edamame",
+    "price": 190,
+    "cuisine": "Japanese",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "prawn-tempura",
+    "restaurantId": "sakura-house",
+    "name": "Prawn Tempura",
+    "price": 460,
+    "cuisine": "Japanese",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "tofu-katsu",
+    "restaurantId": "sakura-house",
+    "name": "Tofu Katsu",
+    "price": 330,
+    "cuisine": "Japanese",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "chicken-tacos",
+    "restaurantId": "casa-fiesta",
+    "name": "Chicken Tacos",
+    "price": 280,
+    "cuisine": "Mexican",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "bean-burrito",
+    "restaurantId": "casa-fiesta",
+    "name": "Bean Burrito",
+    "price": 240,
+    "cuisine": "Mexican",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1584208632869-05fa2b2a5934?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "guacamole-nachos",
+    "restaurantId": "casa-fiesta",
+    "name": "Guacamole Nachos",
+    "price": 210,
+    "cuisine": "Mexican",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "beef-quesadilla",
+    "restaurantId": "casa-fiesta",
+    "name": "Beef Quesadilla",
+    "price": 320,
+    "cuisine": "Mexican",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "elote-cup",
+    "restaurantId": "casa-fiesta",
+    "name": "Elote Cup",
+    "price": 160,
+    "cuisine": "Mexican",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "fish-tacos",
+    "restaurantId": "casa-fiesta",
+    "name": "Fish Tacos",
+    "price": 300,
+    "cuisine": "Mexican",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "thai-green-curry",
+    "restaurantId": "thai-basil",
+    "name": "Thai Green Curry",
+    "price": 340,
+    "cuisine": "Thai",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1521633138793-76551d05e2a3?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "pad-thai",
+    "restaurantId": "thai-basil",
+    "name": "Pad Thai",
+    "price": 320,
+    "cuisine": "Thai",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "crispy-tofu",
+    "restaurantId": "thai-basil",
+    "name": "Crispy Tofu",
+    "price": 270,
+    "cuisine": "Thai",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "basil-chicken",
+    "restaurantId": "thai-basil",
+    "name": "Basil Chicken",
+    "price": 350,
+    "cuisine": "Thai",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "mango-sticky-rice",
+    "restaurantId": "thai-basil",
+    "name": "Mango Sticky Rice",
+    "price": 220,
+    "cuisine": "Thai",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1621293954908-907159247fc8?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "prawn-tom-yum",
+    "restaurantId": "thai-basil",
+    "name": "Prawn Tom Yum",
+    "price": 390,
+    "cuisine": "Thai",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "classic-burger",
+    "restaurantId": "burger-foundry",
+    "name": "Classic Burger",
+    "price": 300,
+    "cuisine": "American",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "veggie-burger",
+    "restaurantId": "burger-foundry",
+    "name": "Veggie Burger",
+    "price": 280,
+    "cuisine": "American",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "crispy-chicken-burger",
+    "restaurantId": "burger-foundry",
+    "name": "Crispy Chicken Burger",
+    "price": 340,
+    "cuisine": "American",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "loaded-fries",
+    "restaurantId": "burger-foundry",
+    "name": "Loaded Fries",
+    "price": 190,
+    "cuisine": "American",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "mac-and-cheese",
+    "restaurantId": "burger-foundry",
+    "name": "Mac and Cheese",
+    "price": 230,
+    "cuisine": "American",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "buffalo-wings",
+    "restaurantId": "burger-foundry",
+    "name": "Buffalo Wings",
+    "price": 360,
+    "cuisine": "American",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "kung-pao-chicken",
+    "restaurantId": "dragon-wok",
+    "name": "Kung Pao Chicken",
+    "price": 360,
+    "cuisine": "Chinese",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "vegetable-hakka-noodles",
+    "restaurantId": "dragon-wok",
+    "name": "Vegetable Hakka Noodles",
+    "price": 250,
+    "cuisine": "Chinese",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "mapo-tofu",
+    "restaurantId": "dragon-wok",
+    "name": "Mapo Tofu",
+    "price": 280,
+    "cuisine": "Chinese",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "prawn-fried-rice",
+    "restaurantId": "dragon-wok",
+    "name": "Prawn Fried Rice",
+    "price": 390,
+    "cuisine": "Chinese",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "spring-rolls",
+    "restaurantId": "dragon-wok",
+    "name": "Vegetable Spring Rolls",
+    "price": 180,
+    "cuisine": "Chinese",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1623253083987-26681ce4a992?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "sweet-sour-pork",
+    "restaurantId": "dragon-wok",
+    "name": "Sweet and Sour Pork",
+    "price": 370,
+    "cuisine": "Chinese",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "falafel-platter",
+    "restaurantId": "olive-grove",
+    "name": "Falafel Platter",
+    "price": 290,
+    "cuisine": "Mediterranean",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1718801594202-87766a1d5ce5?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "chicken-shawarma",
+    "restaurantId": "olive-grove",
+    "name": "Chicken Shawarma",
+    "price": 330,
+    "cuisine": "Mediterranean",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "greek-salad",
+    "restaurantId": "olive-grove",
+    "name": "Greek Salad",
+    "price": 260,
+    "cuisine": "Mediterranean",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "lamb-kebab",
+    "restaurantId": "olive-grove",
+    "name": "Lamb Kebab",
+    "price": 440,
+    "cuisine": "Mediterranean",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "hummus-pita",
+    "restaurantId": "olive-grove",
+    "name": "Hummus and Pita",
+    "price": 220,
+    "cuisine": "Mediterranean",
+    "isVeg": true,
+    "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=200&h=200&fit=crop"
+  },
+  {
+    "id": "grilled-fish",
+    "restaurantId": "olive-grove",
+    "name": "Grilled Fish",
+    "price": 480,
+    "cuisine": "Mediterranean",
+    "isVeg": false,
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=200&h=200&fit=crop"
+  }
+]
