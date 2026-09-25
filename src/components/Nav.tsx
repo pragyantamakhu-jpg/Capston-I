@@ -15,6 +15,7 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
+  const isAuthRoute = pathname === "/login" || pathname === "/signup";
   const router = useRouter();
   const { user, loading } = useAuth();
   const [isRecommendOpen, setIsRecommendOpen] = useState(false);
@@ -26,85 +27,89 @@ export default function Nav() {
           <Link href="/" className="text-lg font-bold text-brand-600">
             FoodHub
           </Link>
-          <div className="flex items-center gap-4">
-            <ul className="flex gap-4">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={`text-sm ${
-                      pathname === link.href
-                        ? "font-semibold text-brand-600"
-                        : "text-neutral-600 hover:text-brand-600"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-              {!loading && !user && (
-                <li>
-                  <Link
-                    href="/login"
-                    className={`text-sm ${
-                      pathname === "/login"
-                        ? "font-semibold text-brand-600"
-                        : "text-neutral-600 hover:text-brand-600"
-                    }`}
-                  >
-                    Login
-                  </Link>
-                </li>
-              )}
-              {!loading && user && (
-                <li className="flex items-center gap-3 text-sm">
-                  <button
-                    type="button"
-                    onClick={() => setIsRecommendOpen(true)}
-                    aria-label="Recommend a meal"
-                    className="flex items-center gap-1 text-neutral-600 hover:text-brand-600"
-                  >
-                    <Sparkles size={16} aria-hidden="true" />
-                    <span className="hidden sm:inline">Recommend</span>
-                  </button>
-                  <span
-                    className="max-w-40 truncate text-neutral-600"
-                    title={user.email ?? "Account"}
-                  >
-                    {user.email}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={async () => {
-                      await signOutUser();
-                      router.replace("/login");
-                    }}
-                    className="text-neutral-600 hover:text-brand-600"
-                  >
-                    Log out
-                  </button>
-                </li>
-              )}
-            </ul>
-            <Link
-              href="/cart"
-              aria-label="Cart"
-              title="Cart"
-              className={
-                pathname === "/cart"
-                  ? "text-brand-600"
-                  : "text-neutral-600 hover:text-brand-600"
-              }
-            >
-              <ShoppingCart size={20} aria-hidden="true" />
-            </Link>
-          </div>
+          {!isAuthRoute && (
+            <div className="flex items-center gap-4">
+              <ul className="flex gap-4">
+                {links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`text-sm ${
+                        pathname === link.href
+                          ? "font-semibold text-brand-600"
+                          : "text-neutral-600 hover:text-brand-600"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+                {!loading && !user && (
+                  <li>
+                    <Link
+                      href="/login"
+                      className={`text-sm ${
+                        pathname === "/login"
+                          ? "font-semibold text-brand-600"
+                          : "text-neutral-600 hover:text-brand-600"
+                      }`}
+                    >
+                      Login
+                    </Link>
+                  </li>
+                )}
+                {!loading && user && (
+                  <li className="flex items-center gap-3 text-sm">
+                    <button
+                      type="button"
+                      onClick={() => setIsRecommendOpen(true)}
+                      aria-label="Recommend a meal"
+                      className="flex items-center gap-1 text-neutral-600 hover:text-brand-600"
+                    >
+                      <Sparkles size={16} aria-hidden="true" />
+                      <span className="hidden sm:inline">Recommend</span>
+                    </button>
+                    <span
+                      className="max-w-40 truncate text-neutral-600"
+                      title={user.email ?? "Account"}
+                    >
+                      {user.email}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={async () => {
+                        await signOutUser();
+                        router.replace("/login");
+                      }}
+                      className="text-neutral-600 hover:text-brand-600"
+                    >
+                      Log out
+                    </button>
+                  </li>
+                )}
+              </ul>
+              <Link
+                href="/cart"
+                aria-label="Cart"
+                title="Cart"
+                className={
+                  pathname === "/cart"
+                    ? "text-brand-600"
+                    : "text-neutral-600 hover:text-brand-600"
+                }
+              >
+                <ShoppingCart size={20} aria-hidden="true" />
+              </Link>
+            </div>
+          )}
         </div>
       </nav>
-      <RecommendModal
-        isOpen={isRecommendOpen}
-        onClose={() => setIsRecommendOpen(false)}
-      />
+      {!isAuthRoute && (
+        <RecommendModal
+          isOpen={isRecommendOpen}
+          onClose={() => setIsRecommendOpen(false)}
+        />
+      )}
     </>
   );
 }
