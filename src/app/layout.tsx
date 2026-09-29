@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import ReactDOM from "react-dom";
 import AuthGuard from "@/components/AuthGuard";
 import Nav from "@/components/Nav";
 import { AuthProvider } from "@/context/AuthContext";
@@ -18,16 +17,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  ReactDOM.preconnect("https://identitytoolkit.googleapis.com");
-  ReactDOM.preconnect("https://apis.google.com");
-
-  const authDomain = process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN;
-  if (authDomain) {
-    ReactDOM.preconnect(`https://${authDomain}`, {
-      crossOrigin: "anonymous",
-    });
-  }
-
   return (
     <html lang="en">
       <body className="min-h-screen bg-neutral-50 text-neutral-900 antialiased">
