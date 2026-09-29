@@ -36,6 +36,7 @@ export default function MenuItemCard({
             width={44}
             height={44}
             loading="lazy"
+            quality={75}
             className="rounded-lg object-cover"
           />
         </div>

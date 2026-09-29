@@ -11,6 +11,7 @@ type RestaurantCardProps = {
   cuisine: string;
   rating: number;
   image: string;
+  priority?: boolean;
 };
 
 export default function RestaurantCard({
@@ -19,6 +20,7 @@ export default function RestaurantCard({
   cuisine,
   rating,
   image,
+  priority = false,
 }: RestaurantCardProps) {
   const { isFavorite, toggleFavorite } = useFavorites();
   const favorite = isFavorite(id);
@@ -31,7 +33,9 @@ export default function RestaurantCard({
             src={image}
             alt={name}
             fill
-            loading="lazy"
+            sizes="(min-width: 1024px) 320px, (min-width: 640px) calc((100vw - 48px) / 2), calc(100vw - 32px)"
+            quality={75}
+            preload={priority}
             className="rounded-lg object-cover"
           />
         </div>
