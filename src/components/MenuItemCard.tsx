@@ -44,7 +44,7 @@ export default function MenuItemCard({
           <p className="truncate text-sm font-medium text-neutral-900">
             {name}
           </p>
-          <p className="mt-1 text-sm text-neutral-600">₹{price}</p>
+          <p className="mt-1 text-sm text-neutral-700">₹{price}</p>
         </div>
       </div>
       <QuantityStepper

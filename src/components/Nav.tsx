@@ -24,7 +24,7 @@ export default function Nav() {
     <>
       <nav className="border-b border-neutral-200 bg-white">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-          <Link href="/" className="text-lg font-bold text-brand-600">
+          <Link href="/" className="text-lg font-bold text-brand-700">
             FoodHub
           </Link>
           {!isAuthRoute && (
@@ -36,8 +36,8 @@ export default function Nav() {
                       href={link.href}
                       className={`text-sm ${
                         pathname === link.href
-                          ? "font-semibold text-brand-600"
-                          : "text-neutral-600 hover:text-brand-600"
+                          ? "font-semibold text-brand-700"
+                          : "text-neutral-700 hover:text-brand-700"
                       }`}
                     >
                       {link.label}
@@ -50,8 +50,8 @@ export default function Nav() {
                       href="/login"
                       className={`text-sm ${
                         pathname === "/login"
-                          ? "font-semibold text-brand-600"
-                          : "text-neutral-600 hover:text-brand-600"
+                          ? "font-semibold text-brand-700"
+                          : "text-neutral-700 hover:text-brand-700"
                       }`}
                     >
                       Login
@@ -64,13 +64,13 @@ export default function Nav() {
                       type="button"
                       onClick={() => setIsRecommendOpen(true)}
                       aria-label="Recommend a meal"
-                      className="flex items-center gap-1 text-neutral-600 hover:text-brand-600"
+                      className="flex items-center gap-1 text-neutral-700 hover:text-brand-700"
                     >
                       <Sparkles size={16} aria-hidden="true" />
                       <span className="hidden sm:inline">Recommend</span>
                     </button>
                     <span
-                      className="max-w-40 truncate text-neutral-600"
+                      className="max-w-40 truncate text-neutral-700"
                       title={user.email ?? "Account"}
                     >
                       {user.email}
@@ -81,7 +81,7 @@ export default function Nav() {
                         await signOutUser();
                         router.replace("/login");
                       }}
-                      className="text-neutral-600 hover:text-brand-600"
+                      className="text-neutral-700 hover:text-brand-700"
                     >
                       Log out
                     </button>
@@ -94,8 +94,8 @@ export default function Nav() {
                 title="Cart"
                 className={
                   pathname === "/cart"
-                    ? "text-brand-600"
-                    : "text-neutral-600 hover:text-brand-600"
+                    ? "text-brand-700"
+                    : "text-neutral-700 hover:text-brand-700"
                 }
               >
                 <ShoppingCart size={20} aria-hidden="true" />

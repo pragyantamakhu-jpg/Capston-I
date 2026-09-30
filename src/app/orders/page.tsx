@@ -11,8 +11,8 @@ export default function OrdersPage() {
       <h1 className="text-2xl font-bold">Order History</h1>
       {orders.length === 0 ? (
         <div className="mt-12 text-center">
-          <p className="text-neutral-600">No orders yet</p>
-          <Link href="/" className="mt-4 inline-block text-brand-600">
+          <p className="text-neutral-700">No orders yet</p>
+          <Link href="/" className="mt-4 inline-block text-brand-700">
             Browse restaurants
           </Link>
         </div>
@@ -28,7 +28,7 @@ export default function OrdersPage() {
                 <p className="font-semibold">
                   {order.restaurantName || `Order ${order.id.slice(0, 8)}`}
                 </p>
-                <p className="mt-1 text-sm text-neutral-600">
+                <p className="mt-1 text-sm text-neutral-700">
                   {order.items.reduce(
                     (count, item) => count + item.quantity,
                     0,
@@ -41,7 +41,7 @@ export default function OrdersPage() {
               </div>
               <div className="text-right">
                 <p className="font-medium">${order.total.toFixed(2)}</p>
-                <p className="mt-1 text-sm capitalize text-neutral-600">
+                <p className="mt-1 text-sm capitalize text-neutral-700">
                   {order.status}
                 </p>
               </div>

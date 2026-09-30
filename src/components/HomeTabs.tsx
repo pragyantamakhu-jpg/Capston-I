@@ -19,8 +19,8 @@ export default function HomeTabs({ activeTab, onTabChange }: HomeTabsProps) {
           onClick={() => onTabChange(tab)}
           className={`border-b-2 pb-2 text-sm ${
             activeTab === tab
-              ? "border-brand-600 font-semibold text-brand-600"
-              : "border-transparent text-neutral-600"
+              ? "border-brand-600 font-semibold text-brand-700"
+              : "border-transparent text-neutral-700"
           }`}
         >
           {tab}

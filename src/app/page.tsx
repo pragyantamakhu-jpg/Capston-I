@@ -33,7 +33,7 @@ export default function HomePage() {
       ) : (
         <div className="flex min-h-48 flex-col items-center justify-center text-center">
           <p className="text-lg font-semibold">No favorites yet</p>
-          <p className="mt-2 text-sm text-neutral-600">
+          <p className="mt-2 text-sm text-neutral-700">
             Tap the heart on any restaurant to save it here
           </p>
         </div>

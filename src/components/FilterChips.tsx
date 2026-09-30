@@ -25,7 +25,7 @@ export default function FilterChips({
           className={`rounded-full px-3 py-1 text-sm ${
             activeFilter === filter.value
               ? "bg-brand-600 text-white"
-              : "border border-neutral-300 text-neutral-600"
+              : "border border-neutral-300 text-neutral-700"
           }`}
         >
           {filter.label}

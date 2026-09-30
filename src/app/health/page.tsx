@@ -12,8 +12,8 @@ export default async function HealthPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold">Health Check</h1>
-      <p className="mt-2 text-neutral-600">
-        Status: <span className="font-semibold text-brand-600">OK</span>
+      <p className="mt-2 text-neutral-700">
+        Status: <span className="font-semibold text-brand-700">OK</span>
       </p>
       <pre className="mt-4 rounded-lg bg-neutral-100 p-4 text-sm">
         {JSON.stringify(data, null, 2)}

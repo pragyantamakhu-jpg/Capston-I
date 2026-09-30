@@ -34,12 +34,12 @@ export default function CartPage() {
     return (
       <div className="flex min-h-[50vh] flex-col items-center justify-center text-center">
         <h1 className="text-2xl font-bold">Your cart is empty</h1>
-        <p className="mt-2 text-neutral-600">
+        <p className="mt-2 text-neutral-700">
           Browse restaurants to get started
         </p>
         <Link
           href="/"
-          className="mt-6 rounded-lg border border-neutral-300 px-4 py-2 text-sm text-neutral-600"
+          className="mt-6 rounded-lg border border-neutral-300 px-4 py-2 text-sm text-neutral-700"
         >
           Browse restaurants
         </Link>
@@ -60,7 +60,7 @@ export default function CartPage() {
               <p className="truncate font-medium text-neutral-900">
                 {item.name}
               </p>
-              <p className="mt-1 text-sm text-neutral-600">
+              <p className="mt-1 text-sm text-neutral-700">
                 ${item.price.toFixed(2)} each
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function CartPage() {
           <button
             type="button"
             onClick={applyVoucher}
-            className="rounded-lg border border-neutral-300 px-4 py-2 text-sm text-neutral-600"
+            className="rounded-lg border border-neutral-300 px-4 py-2 text-sm text-neutral-700"
           >
             Apply
           </button>
@@ -97,7 +97,7 @@ export default function CartPage() {
       </div>
 
       <div className="mt-6 border-t border-neutral-200 pt-4">
-        <div className="flex justify-between text-sm text-neutral-600">
+        <div className="flex justify-between text-sm text-neutral-700">
           <span>Subtotal</span>
           <span>${subtotal.toFixed(2)}</span>
         </div>

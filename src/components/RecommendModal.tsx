@@ -72,14 +72,14 @@ export default function RecommendModal({
             type="button"
             onClick={onClose}
             aria-label="Close"
-            className="text-neutral-600"
+            className="text-neutral-700"
           >
             <X size={20} aria-hidden="true" />
           </button>
         </div>
         <fieldset className="mt-5">
           <legend className="text-sm font-medium">Preference</legend>
-          <div className="mt-2 flex gap-4 text-sm text-neutral-600">
+          <div className="mt-2 flex gap-4 text-sm text-neutral-700">
             {[
               { label: "Veg", value: true },
               { label: "Non-veg", value: false },
@@ -110,7 +110,11 @@ export default function RecommendModal({
           >
             {["All", "Indian", "Italian", "Japanese", "Mexican"].map(
               (option) => (
-                <option key={option} className="text-neutral-900" style={{ color: "black" }}>
+                <option
+                  key={option}
+                  className="text-neutral-900"
+                  style={{ color: "black" }}
+                >
                   {option}
                 </option>
               ),
@@ -126,7 +130,7 @@ export default function RecommendModal({
           Get recommendations
         </button>
         {loading && (
-          <div className="mt-5 flex items-center gap-2 text-sm text-neutral-600">
+          <div className="mt-5 flex items-center gap-2 text-sm text-neutral-700">
             <span className="h-4 w-4 animate-spin rounded-full border-2 border-neutral-300 border-t-brand-600" />
             Thinking...
           </div>
@@ -157,11 +161,11 @@ export default function RecommendModal({
                   className="mb-2 rounded-lg border border-neutral-200 p-3"
                 >
                   <p className="font-medium">{pick.name}</p>
-                  <p className="mt-1 text-sm text-neutral-600">{pick.reason}</p>
+                  <p className="mt-1 text-sm text-neutral-700">{pick.reason}</p>
                 </div>
               ))
             ) : (
-              <p className="text-sm text-neutral-600">
+              <p className="text-sm text-neutral-700">
                 No items match those filters.
               </p>
             )}

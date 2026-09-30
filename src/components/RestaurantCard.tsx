@@ -41,8 +41,8 @@ export default function RestaurantCard({
         </div>
         <div className="mt-3">
           <h2 className="font-semibold text-neutral-900">{name}</h2>
-          <p className="mt-1 text-sm text-neutral-600">{cuisine}</p>
-          <p className="mt-1 text-sm text-neutral-600">
+          <p className="mt-1 text-sm text-neutral-700">{cuisine}</p>
+          <p className="mt-1 text-sm text-neutral-700">
             Rating {rating.toFixed(1)}
           </p>
         </div>

@@ -23,7 +23,7 @@ export default function RestaurantMenuList({ items }: { items: MenuItem[] }) {
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => <MenuItemCard key={item.id} {...item} />)
         ) : (
-          <p className="py-4 text-sm text-neutral-600">
+          <p className="py-4 text-sm text-neutral-700">
             No items match this filter
           </p>
         )}

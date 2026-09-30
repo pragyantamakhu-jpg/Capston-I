@@ -16,7 +16,7 @@ export default async function RestaurantMenuPage({
     return (
       <div className="text-center">
         <h1 className="text-2xl font-bold">Restaurant not found</h1>
-        <Link href="/" className="mt-4 inline-block text-brand-600">
+        <Link href="/" className="mt-4 inline-block text-brand-700">
           Back to restaurants
         </Link>
       </div>
@@ -29,7 +29,7 @@ export default async function RestaurantMenuPage({
     <div>
       <header>
         <h1 className="text-2xl font-bold">{restaurant.name}</h1>
-        <p className="mt-2 text-neutral-600">
+        <p className="mt-2 text-neutral-700">
           {restaurant.cuisine} · Rating {restaurant.rating.toFixed(1)}
         </p>
       </header>

@@ -105,9 +105,9 @@ export default function SignupPage() {
           {isSubmitting ? "Creating account..." : "Create account"}
         </button>
       </form>
-      <p className="mt-4 text-sm text-neutral-600">
+      <p className="mt-4 text-sm text-neutral-700">
         Already have an account?{" "}
-        <Link href="/login" className="text-brand-600">
+        <Link href="/login" className="text-brand-700">
           Log in
         </Link>
       </p>

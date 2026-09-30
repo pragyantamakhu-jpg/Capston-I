@@ -13,7 +13,7 @@ export default function OrderDetailPage() {
     return (
       <div className="text-center">
         <h1 className="text-2xl font-bold">Order not found</h1>
-        <Link href="/orders" className="mt-4 inline-block text-brand-600">
+        <Link href="/orders" className="mt-4 inline-block text-brand-700">
           Back to orders
         </Link>
       </div>
@@ -31,11 +31,11 @@ export default function OrderDetailPage() {
             Order {order.id.slice(0, 8)}
           </p>
         </div>
-        <span className="rounded-full bg-neutral-100 px-3 py-1 text-sm capitalize text-neutral-600">
+        <span className="rounded-full bg-neutral-100 px-3 py-1 text-sm capitalize text-neutral-700">
           {order.status}
         </span>
       </div>
-      <p className="mt-2 text-sm text-neutral-600">
+      <p className="mt-2 text-sm text-neutral-700">
         Placed on {new Date(order.createdAt).toLocaleDateString()}
       </p>
       <div className="mt-6 border-y border-neutral-200">
@@ -52,7 +52,7 @@ export default function OrderDetailPage() {
         ))}
       </div>
       <div className="mt-6 space-y-2 text-sm">
-        <div className="flex justify-between text-neutral-600">
+        <div className="flex justify-between text-neutral-700">
           <span>Subtotal</span>
           <span>${order.subtotal.toFixed(2)}</span>
         </div>

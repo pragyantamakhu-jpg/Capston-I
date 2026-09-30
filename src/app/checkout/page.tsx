@@ -102,7 +102,7 @@ export default function CheckoutPage() {
           ))}
         </div>
         <div className="mt-4 space-y-2 text-sm">
-          <div className="flex justify-between text-neutral-600">
+          <div className="flex justify-between text-neutral-700">
             <span>Subtotal</span>
             <span>${subtotal.toFixed(2)}</span>
           </div>
@@ -171,7 +171,7 @@ export default function CheckoutPage() {
       </button>
       <Link
         href="/cart"
-        className="mt-3 block text-center text-sm text-neutral-600"
+        className="mt-3 block text-center text-sm text-neutral-700"
       >
         Back to cart
       </Link>

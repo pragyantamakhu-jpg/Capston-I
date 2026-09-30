@@ -12,12 +12,12 @@ export default function AdminOrdersPage() {
     <div>
       <h1 className="text-2xl font-bold">Manage Orders</h1>
       {orders.length === 0 ? (
-        <p className="mt-12 text-center text-neutral-600">No orders yet</p>
+        <p className="mt-12 text-center text-neutral-700">No orders yet</p>
       ) : (
         <div className="mt-6 overflow-x-auto">
           <table className="w-full min-w-160 text-left text-sm">
             <thead>
-              <tr className="border-b border-neutral-200 text-neutral-600">
+              <tr className="border-b border-neutral-200 text-neutral-700">
                 <th className="px-3 py-3 font-medium">Order</th>
                 <th className="px-3 py-3 font-medium">Date</th>
                 <th className="px-3 py-3 font-medium">Items</th>

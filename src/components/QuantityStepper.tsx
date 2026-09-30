@@ -20,7 +20,7 @@ export default function QuantityStepper({
         aria-label="Decrease quantity"
         disabled={quantity === 0}
         onClick={onDecrement}
-        className={`text-neutral-600 ${
+        className={`text-neutral-700 ${
           quantity === 0 ? "cursor-not-allowed opacity-40" : ""
         }`}
       >
@@ -33,7 +33,7 @@ export default function QuantityStepper({
         type="button"
         aria-label="Increase quantity"
         onClick={onIncrement}
-        className="text-neutral-600"
+        className="text-neutral-700"
       >
         <Plus size={16} aria-hidden="true" />
       </button>
