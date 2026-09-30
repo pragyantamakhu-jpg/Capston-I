@@ -15,7 +15,7 @@ export default function MiniCartBar() {
   return (
     <Link
       href="/cart"
-      className="fixed right-0 bottom-0 left-0 z-10 flex items-center justify-between bg-brand-600 px-4 py-3 text-white shadow-lg"
+      className="fixed right-0 bottom-0 left-0 z-10 flex items-center justify-between bg-brand-700 px-4 py-3 text-white shadow-lg"
     >
       <span>
         {itemCount} {itemCount === 1 ? "item" : "items"}

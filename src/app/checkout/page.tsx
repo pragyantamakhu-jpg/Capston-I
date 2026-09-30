@@ -165,7 +165,7 @@ export default function CheckoutPage() {
         type="button"
         disabled={isSubmitting}
         onClick={placeOrder}
-        className="mt-6 w-full rounded-lg bg-brand-600 px-4 py-3 text-white disabled:opacity-60"
+        className="mt-6 w-full rounded-lg bg-brand-700 px-4 py-3 text-white disabled:opacity-60"
       >
         {isSubmitting ? "Placing order..." : "Place order"}
       </button>

@@ -24,7 +24,7 @@ export default function FilterChips({
           onClick={() => onFilterChange(filter.value)}
           className={`rounded-full px-3 py-1 text-sm ${
             activeFilter === filter.value
-              ? "bg-brand-600 text-white"
+              ? "bg-brand-700 text-white"
               : "border border-neutral-300 text-neutral-700"
           }`}
         >

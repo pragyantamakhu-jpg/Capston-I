@@ -125,7 +125,7 @@ export default function RecommendModal({
           type="button"
           onClick={getRecommendations}
           disabled={loading}
-          className="mt-5 w-full rounded-lg bg-brand-600 px-4 py-2 text-white disabled:opacity-60"
+          className="mt-5 w-full rounded-lg bg-brand-700 px-4 py-2 text-white disabled:opacity-60"
         >
           Get recommendations
         </button>

@@ -119,7 +119,7 @@ export default function CartPage() {
             ? `/checkout?voucher=${encodeURIComponent(appliedVoucher.code)}`
             : "/checkout"
         }
-        className="mt-6 block w-full rounded-lg bg-brand-600 px-4 py-3 text-center text-white"
+        className="mt-6 block w-full rounded-lg bg-brand-700 px-4 py-3 text-center text-white"
       >
         Proceed to checkout
       </Link>
