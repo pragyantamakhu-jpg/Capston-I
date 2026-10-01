@@ -1,0 +1,15 @@
+Reflection
+
+What was hardest, and why
+
+The most difficult part of this capstone was not building new features, but debugging issues that appeared to be one thing while actually being another. The clearest example involved a persistent visual bug: pages consistently rendered with a black background and yellow headings regardless of the Tailwind classes applied. I initially assumed this was caused by my browser's dark mode setting overriding the site's styles. The actual cause was leftover boilerplate CSS from the initial create-next-app scaffold, still present in globals.css — a plain body { background; color; } rule paired with a prefers-color-scheme: dark media query, silently overriding the theme tokens I had defined. It was not a browser issue at all; it was dead code I had carried, unnoticed, since the very first setup. Resolving it required revisiting a file I had assumed was finished weeks earlier.
+
+The second major challenge was performance debugging. The Lighthouse Performance score remained stuck in the high 70s despite optimizing images, adding caching headers, and adjusting loading priorities — none of these changes produced any measurable improvement. The actual cause was Firebase Authentication's default initialization process, which eagerly loads an authentication iframe and fetches project configuration from Google's servers, adding over two seconds to every page load before the application could even begin rendering. Since the application uses only email/password sign-in and never relies on popup or redirect authentication, this overhead was entirely unnecessary. Switching to a leaner initializeAuth() configuration resolved it. This experience demonstrated that performance bottlenecks are not always located where one expects — sometimes they originate from a dependency's default behavior rather than the application's own code.
+
+What I would do differently next time
+
+I would remove scaffolded boilerplate immediately after project setup, rather than assuming generated code is harmless simply because it compiles without error. I would also evaluate the network cost of third-party SDK initialization, such as Firebase, earlier in development, rather than equating functional correctness with acceptable performance. Additionally, I would configure environment variables in the deployment platform as soon as they are introduced locally, instead of discovering mismatches only after a failed production build.
+
+One thing that surprised me
+
+I did not expect switching AI providers to be as straightforward as it was. The recommendation feature was originally built using the Claude API, but was later switched to Google's Gemini API for cost reasons. Because the response structure ({ picks, fallback }) was fully contained within a single API route, the frontend modal required no changes whatsoever. This was the first time I directly experienced the value of maintaining a clean boundary between a feature's user interface and its backend implementation — replacing the entire AI provider amounted to a same-day change rather than a rewrite.
